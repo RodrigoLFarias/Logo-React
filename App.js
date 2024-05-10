@@ -1,11 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+
+  const nome = "Criado por Rodrigo.";
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={{color:"blue",fontSize: 25}}>Olá, Mundo!</Text>
+      <Text>Logo React Native.</Text>
       <StatusBar style="auto" />
+
+    <Image 
+    source={{uri:"https://wallpapercave.com/wp/wp5542560.png"}}
+    style ={{width: 300, height: 250}}
+    />
+    <Text style= {{fontSize: 20}}> {nome} </Text>
+    
     </View>
   );
 }
@@ -13,7 +24,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#555',
     alignItems: 'center',
     justifyContent: 'center',
   },
